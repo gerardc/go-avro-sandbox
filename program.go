@@ -32,7 +32,7 @@ func FetchAccount(id int64) (io.Reader, error) {
 	return res.Body, err
 }
 
-func ReadPerson(filename string) (Person, error) {
+func ReadPersonFile(filename string) (Person, error) {
 	datumReader := avro.NewGenericDatumReader()
 	reader, err := avro.NewDataFileReader(filename, datumReader)
 

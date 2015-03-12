@@ -26,8 +26,8 @@ func TestReadAccountFile(t *testing.T) {
 	}
 }
 
-func TestReadPerson(t *testing.T) {
-	person, err := ReadPerson("person.avro")
+func TestReadPersonFile(t *testing.T) {
+	person, err := ReadPersonFile("person.avro")
 	if err != nil {
 		t.Error(err)
 	}
